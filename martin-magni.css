@@ -1,0 +1,182 @@
+/*Credit To Martin magni*/
+
+/*Take From MartinMagni.com*/
+
+@font-face {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(baloo.woff) format('woff');
+}
+
+* {
+		margin: 0;
+		padding: 0;
+}
+
+body {
+		font-size: 18px;
+		-webkit-text-size-adjust: 100%;
+		-webkit-tap-highlight-color: transparent;
+		line-height: 1.8;
+		color: #ACAABB;
+		font-family: 'baloo 2';
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl, table {
+		border-spacing: 0;
+		/* max-width: 640px; */
+		/* margin: 0 auto; */
+		position: relative; /* So a child's "position: absolute;" is relative this */
+}
+
+div {
+		margin: 0 auto;
+		max-width: 640px;
+}
+
+td {
+		min-width: 320px;
+}
+
+.center {
+		text-align: center;
+}
+
+/*
+table {
+		border-spacing: 0;
+		max-width: 600px;
+		margin: 0 auto;
+		position: relative; /* So a child's "position: absolute;" is relative this */
+/*}*/
+
+img {
+		vertical-align: top; /* http://stackoverflow.com/questions/6405009/mysterious-padding-margin-appears-after-image-in-strict-mode */
+}
+.fullwidthimage {
+		display: block;
+		margin: 32px auto;
+		/* http://stackoverflow.com/questions/4684304/how-can-i-resize-an-image-dynamically-with-css-as-the-browser-width-height-chang */
+		max-width: 100%;
+		height: auto;
+}
+
+a:link {
+		color: #00B9FE;
+		text-decoration: none;
+		transition: 0.2s;
+}
+a:visited {
+		color: #00B9FE;
+}
+a:hover, a:active {
+		opacity: 0.5;
+}
+a img {
+    border: 0; /* http://stackoverflow.com/questions/7910209/how-to-remove-borders-around-links-in-ie */
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
+		margin-left: 16px;
+		margin-right: 16px;
+}
+ul > li, dd {
+		margin-left: 32px;
+		list-style-type: circle;
+}
+ol > li {
+		margin-left: 32px;
+}
+li > ul, li > ol {
+		margin-left: -16px;
+}
+
+p, ul, ol, dl {
+		margin-bottom: 1em;
+}
+
+h1 {
+		color: #ACAABB;
+		font-size: 72px;
+		font-weight: normal;
+		line-height: 1;
+		margin-top: 1em;
+		margin-bottom: 0;
+}
+
+h2 {
+		color: #ACAABB;
+		font-size: 42px;
+}
+
+iframe {
+  border: 5px solid #1c1c28;
+}
+
+/* http://alistapart.com/article/creating-intrinsic-ratios-for-video */
+.videowrapper {
+		max-width: none;
+		
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		height: 0;
+		/* padding-top: 25px; */
+}
+.videowrapper iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+}
+.videowrapper2 {
+		max-width: 1024px;
+		margin: 0 auto;
+}
+
+#corner {
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: linear-gradient(to left top, #FFF 50%, #EEE 51%);
+}
+#home {
+		width: 27px;
+		height: 22px;
+		margin: 16px;
+}
+
+#footer {
+		max-width: none;
+
+		background-color: #F6F5FF;
+		border-top: 1px solid #e3e6ef;
+		border-bottom: 1px solid #e3e6ef;
+		line-height: 64px;
+		text-align: center;
+}
+#footer a:link, #footer a:visited {
+		color: #ACAABB;
+}
+
+.large { }
+.small { display: none; }
+.appstore100 { width: 180px; height: 60px; }
+.playstore100 { width: 204px; height: 60px; }
+.appstore075 { width: 135px; height: 45px; }
+.playstore075 { width: 153px; height: 45px; }
+
+@media all and (max-width: 666px) {
+		body { font-size: 16px; }
+		h1 { font-size: 48px; }
+		h2 { font-size: 28px; }
+		table, thead, tbody, th, td, tr { display: block; } /* https://css-tricks.com/responsive-data-tables/ */
+		.large { display: none; }
+		.small { display: block; }
+		.appstore100 { width: 135px; height: 45px; }
+		.playstore100 { width: 153px; height: 45px; }
+}

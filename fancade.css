@@ -1,0 +1,514 @@
+/*Fancade.css v3.2a*/
+
+/*All Rights Reserved 2022 Toxel*/
+
+/*Font*/
+
+@font-face {
+  font-family: 'Baloo 2';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(baloo.woff) format('woff');
+}
+
+/*Button CSS*/
+
+.anchor {
+  border-bottom: 7px solid #0065d9;
+  display: block;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 120%;
+  text-decoration: none;
+  background: #0088fe;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.anchor:hover {
+  color: #fff;
+  background: #1c1c28;
+  border: 0px solid #1c1c28;
+}
+
+.b-border {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 20vw;
+  width: 118px;
+  height: 51px;
+  transform-style: preserve-3d;
+  background: #0065d9;
+  transition: all 0.3s ease-in-out;
+}
+
+.sh-border {
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(2px) translateZ(16px);
+}
+
+.button {
+  background: #0088fe;
+  color: #fff;
+  border-radius: 20vw;
+  border: none;
+  font-family: 'baloo 2';
+  padding: 14px 34px;
+  margin: 0;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.button:hover {
+  color: #fff;
+  background: #fff;
+}
+
+/*Disk CSS*/
+
+.edge {
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 164px;
+  height: 164px;
+  background-color: #cfdaed;
+}
+
+.box {
+  width: 164px;
+  height: 164px;
+  background-color: white;
+  position: relative;
+}
+
+.black {
+  width: 132px;
+  height: 156px;
+  background-color: black;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  margin: 0 auto;
+}
+
+.cover {
+  width: 128px;
+  height: 128px;
+  margin: 2px;
+}
+
+.title {
+  font-size: 14px;
+}
+
+.author {
+  border-spacing: 0;
+  font-size: 14px;
+  color: #ccc;
+  text-align: right;
+  position: absolute;
+  width: 100px;
+  top: 4px;
+  right: 142px;
+  transform-origin: right top;
+  transform: rotate(-90deg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p, ul, ol, dl {
+  margin-bottom: 1em;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+img {
+  vertical-align: top;
+}
+
+body {
+  font-family: 'Baloo 2', 'Ubuntu', verdana, sans-serif;
+  line-height: 1.8;
+}
+
+html, body {
+  font-family: 'Baloo 2', 'Ubuntu', verdana, sans-serif;
+  font-size: 18px;
+  color: #ACAABB;
+  display: block;
+  height: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*body {
+  background-image: linear-gradient(135deg, #70e1fd, #00a2ff);
+  background: #70e1fd;
+}*/
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  perspective: 900px;
+}
+
+body {
+  overflow: auto;
+  text-align: center;
+}
+
+.disk {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop-shadow {
+  -webkit-filter: drop-shadow(5px 5px 5px #e3e6ef);
+}
+
+/*Div CSS*/
+
+.div {
+  background: #F6F5FF;
+  border: 5px solid #e3e6ef;
+  border-radius: 10px;
+  width: 90%;
+  height: auto;
+  padding: 25px;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+}
+
+.div-line {
+  width: 90%;
+  height: 0vh;
+  border: 3px solid #e3e6ef;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border-radius: 100vh;
+}
+
+/*Input CSS*/
+
+input {
+  border: 3px solid #e3e6ef;
+  padding: 20px;
+  font-size: 85%;
+  font-family: 'baloo 2';
+  color: #606279;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+input::placeholder {
+   color: #ACAABB;
+}
+
+input:hover {
+  border: 3px solid #0088fe;
+  outline: none;
+}
+
+/*3D Disk*/
+
+.cwrapper {
+  width: 164px;
+  height: 164px;
+  transform-origin: 82px 16px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateY(-16px);
+  transition: all 0.7s ease-in-out;
+}
+
+.cf {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.cfront {
+  transform: rotateY(0deg) translateZ(82px);
+  height: 32px;
+  width: 164px;
+  background: #606279;
+}
+.cleft {
+  transform: rotateY(-90deg) translateZ(82px);
+  height: 32px;
+  width: 164px;
+  background: #acafc2;
+}
+.cback {
+  transform: rotateY(180deg) translateZ(82px);
+  height: 32px;
+  width: 164px;
+  background: #e3e6ef;
+}
+.cright {
+  transform: rotateY(90deg) translateZ(82px);
+  height: 32px;
+  width: 164px;
+  background: #e3e6ef;
+}
+.ctop {
+  transform: rotateX(90deg) translateZ(82px);
+  background:#fff;
+  height: 164px;
+  width: 164px;
+}
+.cbottom {
+  transform: rotateX(-90deg) translateZ(-50px);
+  height: 164px;
+  width: 164px;
+  background: #acafc2;
+}
+
+/*3D Blocks*/
+
+.block {
+  image-rendering: pixelated;
+  display: inline-block;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.7s ease-in-out;
+  background: #000;
+  margin: 20%;
+  margin-inline-start: 20%;
+  margin-inline-end: 20%;
+  animation: block 5s infinite ease-in-out;
+  transform-origin: 32px 32px;
+  transform: translateZ(64px) translateX(-32px) translateY(-32px);
+}
+
+@keyframes block {
+   50% {
+      transform: translateZ(64px) translateY(-32px) translateX(-32px) rotateX(-35deg) rotateY(-45deg);
+   }
+   0%,100% {
+      transform: translateZ(64px) translateY(-32px)translateX(-32px) rotateX(-35deg) rotateY(45deg);
+   }
+}
+
+.block .face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  background: #000;
+}
+
+.block .fface {
+  transform: translateZ(32px);
+}
+
+.block .bface {
+  transform: rotateY(180deg) translateZ(32px);
+  -webkit-filter: hue-rotate(-20deg) brightness(0.89);
+}
+
+.block .tface {
+  transform: rotateX(90deg) translateZ(32px);
+}
+
+.block .dface {
+  transform: rotateX(-90deg) translateZ(32px);
+  -webkit-filter: hue-rotate(-35deg) brightness(0.60);
+}
+
+.block .rface {
+  transform: rotateY(90deg) translateZ(32px);
+  -webkit-filter: hue-rotate(-20deg) brightness(0.80);
+}
+
+.block .lface {
+  transform: rotateY(-90deg) translateZ(32px);
+  -webkit-filter:  hue-rotate(-20deg) brightness(0.80);
+}
+
+/*Custom Disk*/
+
+.disk-io {
+  perspective: 999999px;
+  width: 300px;
+}
+
+.disk-output {
+  position: relative;
+  width: 100%;
+}
+
+.disk-input {
+  width: 49%;
+  position: absolute;
+  left: 30.24%;
+  top: 13%;
+  transform: rotateY(20deg) rotateX(18deg) rotateZ(14deg);
+	background: linear-gradient(45deg, #654da1, #8567d7 , #ab83fe , #ab83fe , #8567d7 , #654da1);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+}
+
+/*Gradient background*/
+
+@keyframes gradient {
+	0% , 100%{
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+}
+
+/*Disk animation*/
+
+  .disk .cwrapper {
+    animation: disk 1s infinite ease-in-out;
+  }
+  @keyframes disk {
+    0% , 100%{
+      transform: translateZ(128px) rotateX(0deg) rotateZ(-7deg) rotateX(-60deg) translateY(-16px);
+    }
+    50% {
+      transform: translateZ(128px) rotateX(0deg) rotateZ(7deg) rotateX(-60deg) translateY(-16px);
+    }
+  }
+  
+/*Perspective - orthographic*/
+  
+#cam1:checked ~ #camera {
+   perspective: 9999px;
+}
+#cam2:checked ~ #camera {
+   perspective: 500px;
+}
+
+#cam1:checked ~ #cam-span1 , #cam2:checked ~ #cam-span2 {
+   color: #0088fe;
+}
+
+#camera {
+   transition: all 0.5s ease-in-out;
+}
+
+#cam-span1 , #cam-span2 {
+   transition: all 0.5s ease-in-out;
+}
+
+/*Pixel Icons*/
+
+.icon8 {
+   transform: scale(6);
+   padding: 0;
+   margin: 32px;
+   display: inline-block;
+   transition: all 0.3s ease-in-out;
+   image-rendering: pixelated;
+}
+
+.icon1 {
+   transform: scale(2.5);
+   margin: 7px;
+   transition: all 0.3s ease-in-out;
+   image-rendering: pixelated;
+}
+
+.icon8:hover {
+   transform: scale(7) rotateZ(15deg);
+}
+
+.icon-grid {
+   background: #42445A;
+   border: #1F202B 5px solid;
+   border-radius: 25px;
+}
+
+.ghost {
+	width: 8px;
+	height: 8px;
+	background-image: url(icons/ic1.png)
+}
+
+.trash {
+	width: 8px;
+	height: 8px;
+	background-image: url(icons/ic2.png)
+}
+
+.paint {
+	width: 8px;
+	height: 8px;
+	background-image: url(icons/ic3.png)
+}
+
+.pencil {
+	width: 8px;
+	height: 8px;
+	background-image: url(icons/ic4.png)
+}
+
+.mail {
+	width: 8px;
+	height: 8px;
+	background-image: url(icons/ic5.png)
+}
+
+.light {
+	width: 8px;
+	height: 8px;
+	background-image: url(icons/ic6.png)
+}
+
+.sound {
+	width: 8px;
+	height: 8px;
+	background-image: url(icons/ic7.png)
+}
+
+.like {
+	width: 8px;
+	height: 8px;
+	background-image: url(icons/ic8.png)
+}
+
+.dislike {
+	width: 8px;
+	height: 8px;
+	background-image: url(icons/ic9.png)
+}
+
+/*Outline CSS*/
+
+.outline {
+   padding: 0;
+   margin-left: 15%;
+   margin-right: 15%;
+   margin-top: 5%;
+   margin-bottom: 5%;
+   width: 70%;
+   border-radius: 25px;
+   border: 5px #42445A solid;
+}
